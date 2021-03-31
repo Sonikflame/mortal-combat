@@ -1,0 +1,129 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    background: #010202;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+a {
+    text-decoration: none;
+}
+.wrapper {
+    background: linear-gradient(90deg, #010202 0%, #010202 50%, rgba(1, 2, 2, 0.2) 90.9%); /*, url(../img/cover-image.jpg) center right 10% no-repeat;*/
+    min-height: 100vh;
+}
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 56px 0;
+}
+.logo {
+    display: block;
+}
+.user-photo {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+.user {
+    display: flex;
+    align-items: center;
+}
+.user-name {
+    color: #FFFFFF;
+    margin-right: 15px;
+}
+.app {
+    width: 90%;
+    max-width: 1146px;
+    margin: 0 auto;
+    color: #fff;
+}
+.film {
+    margin-top: 200px;
+}
+.film-logo {
+    margin-bottom: 18px;
+    max-width: 100%;
+}
+.description {
+    max-width: 460px;
+    font-size: 21px;
+    line-height: 140%;
+    margin-bottom: 36px;
+    margin-top: 0;
+}
+.tags {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 16px;
+    line-height: 140%;
+    color: #E5E5E5;
+    opacity: 0.4;
+    margin-bottom: 9px;
+    font-size: 16px;
+    line-height: 140%;
+}
+.tags > *:not(:last-child) {
+    margin-right: 15px;
+}
+.age {
+    border: 1px solid #FFFFFF;
+    border-radius: 2px;
+    padding: 1px 5px;
+}
+.button {
+    padding: 11px 26px;
+    border-radius: 6px;
+    border: none;
+    font-size: 16px;
+    line-height: 160%;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+.button-default {
+    background: #2F2F2F;
+}
+.button-primary {
+    background: #EA6E20;
+    margin-right: 15px;
+}
+.button-text {
+    margin-left: 10px;
+    vertical-align: text-bottom;
+}
+
+video {
+    width: 100%;
+}
+@media (max-width: 768px) {
+    .wrapper {
+        padding-bottom: 68%;
+        background: url(../img/cover-image.jpg) no-repeat bottom center;
+        background-size: 49%;
+    }
+    video {
+        display: none;
+    }
+}
+@media (max-width: 900px) {
+    .wrapper {
+        height: auto;
+    }
+    .film {
+        margin-top: 25px;
+    }
+}
+@media (max-width: 576px) {
+    .description {
+        font-size: 18px;
+    }
+    .tags {
+        font-size: 15px;
+    }
+    .button-text, .user-name {
+        display: none;
+    }
+}
